@@ -10,9 +10,4 @@ package ProcesoCorrecto;
  * @author User-PC
  */
 
-import Leche2.*;
-public class CambiadorLeche {
-    public void cambiarLeche(Leche tipoLeche){ 
-        tipoLeche.cambiar();
-    }
-}
+
