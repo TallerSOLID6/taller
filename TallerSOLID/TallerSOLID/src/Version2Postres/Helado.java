@@ -5,14 +5,28 @@
  */
 package Version2Postres;
 
+import Otros.Aderezo;
+import ProcesoCorrecto.OperacionesAderezoCorrecto;
+
 /**
  *
  * @author Administrador
  */
-public class Helado extends Producto{
+public class Helado extends Producto implements OperacionesAderezoCorrecto{
     
     public Helado(String sabor) {
         super(sabor);
+    }
+
+
+    @Override
+    public void anadirAderezo(Aderezo aderezo) {
+        aderezos.add(aderezo);
+    }
+
+    @Override
+    public void quitarAderezo(Aderezo aderezo) {
+        aderezos.remove(aderezo);
     }
     
     
